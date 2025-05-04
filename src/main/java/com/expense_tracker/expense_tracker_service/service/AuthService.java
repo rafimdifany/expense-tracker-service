@@ -2,7 +2,7 @@ package com.expense_tracker.expense_tracker_service.service;
 
 
 
-import com.expense_tracker.expense_tracker_service.config.JwtUtil;
+import com.expense_tracker.expense_tracker_service.security.JwtUtil;
 import com.expense_tracker.expense_tracker_service.dto.AuthRequest;
 import com.expense_tracker.expense_tracker_service.dto.AuthResponse;
 import com.expense_tracker.expense_tracker_service.dto.RegisterRequest;
@@ -26,6 +26,7 @@ public class AuthService {
     private final AuthenticationManager authenticationManager;
 
     public AuthResponse register(RegisterRequest request) {
+        //Better get ke DB Caching; i.e Redis
         if (userRepository.existsByEmail(request.email())) {
             throw new RuntimeException("Email already in use");
         }

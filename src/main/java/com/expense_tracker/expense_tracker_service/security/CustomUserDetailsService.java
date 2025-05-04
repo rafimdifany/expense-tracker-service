@@ -1,4 +1,4 @@
-package com.expense_tracker.expense_tracker_service.service;
+package com.expense_tracker.expense_tracker_service.security;
 import com.expense_tracker.expense_tracker_service.entity.User;
 import com.expense_tracker.expense_tracker_service.repository.UserRepository;
 import lombok.RequiredArgsConstructor;

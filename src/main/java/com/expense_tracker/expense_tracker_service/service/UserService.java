@@ -6,6 +6,7 @@ import com.expense_tracker.expense_tracker_service.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+import java.util.NoSuchElementException;
 
 @Service
 @Slf4j
@@ -13,8 +14,9 @@ import org.springframework.stereotype.Service;
 public class UserService {
     private final UserRepository userRepository;
 
-    public User getUserByUsername(String username) {
-        return userRepository.findByUsername(username).orElseThrow();
+
+    public User getByEmail(String email) {
+        return userRepository.findByEmail(email).orElseThrow(() -> new NoSuchElementException("User is not found"));
     }
 
 
