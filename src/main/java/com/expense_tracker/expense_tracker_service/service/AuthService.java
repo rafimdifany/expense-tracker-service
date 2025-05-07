@@ -24,6 +24,7 @@ public class AuthService {
     private final PasswordEncoder passwordEncoder;
     private final JwtUtil jwtUtil;
     private final AuthenticationManager authenticationManager;
+    private final EmailService emailService;
 
     public AuthResponse register(RegisterRequest request) {
         //Better get ke DB Caching; i.e Redis
@@ -54,5 +55,10 @@ public class AuthService {
 
         String token = jwtUtil.generateToken(user.getEmail());
         return new AuthResponse(token);
+    }
+
+    public String sendEmailForgotPassword(String email) {
+        emailService.sendHtmlMail(email, "Forgot Password");
+        return "ok";
     }
 }

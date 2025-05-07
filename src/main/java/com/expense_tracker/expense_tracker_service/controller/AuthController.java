@@ -25,4 +25,10 @@ public class AuthController {
     public ResponseEntity<AuthResponse> login(@RequestBody AuthRequest request) {
         return ResponseEntity.ok(authService.login(request));
     }
+
+
+    @PostMapping("/forget-passwords")
+    public ResponseEntity<String> forgetPasswords(String email) {
+        return ResponseEntity.ok(authService.sendEmailForgotPassword(email));
+    }
 }
