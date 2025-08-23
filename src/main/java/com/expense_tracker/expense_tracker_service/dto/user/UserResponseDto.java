@@ -1,4 +1,4 @@
-package com.expense_tracker.expense_tracker_service.dto.User;
+package com.expense_tracker.expense_tracker_service.dto.user;
 
 import lombok.*;
 

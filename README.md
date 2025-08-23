@@ -19,6 +19,7 @@ This project includes JWT-based authentication, CRUD operations for transactions
 - **Lombok**
 - **JUnit 5** & **Mockito** (for testing)
 - **Maven** as the build tool
+- **Springdoc OpenAPI (Swagger)** for API documentation
 
 ---
 
@@ -36,8 +37,24 @@ This project includes JWT-based authentication, CRUD operations for transactions
 
 ## 🚀 Getting Started
 
+### 📚 API Documentation (Swagger)
+
+This project uses **Springdoc OpenAPI** to generate interactive API documentation.  
+Swagger UI lets you explore and test all available endpoints directly from your browser.
+
+### 🔹 Accessing Swagger UI
+
+1. Make sure the backend is running:
+   ```bash
+   ./mvnw spring-boot:run
+2. Open your browser and navigate to:
+   http://localhost:8080/swagger-ui/index.html
+
+
 ### Prerequisites
 
 - Java 21
 - Maven
 - PostgreSQL (or any other RDBMS)
+
+

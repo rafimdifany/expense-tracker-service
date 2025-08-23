@@ -1,7 +1,7 @@
 package com.expense_tracker.expense_tracker_service.service;
 
 
-import com.expense_tracker.expense_tracker_service.dto.User.UserResponseDto;
+import com.expense_tracker.expense_tracker_service.dto.user.UserResponseDto;
 import com.expense_tracker.expense_tracker_service.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
