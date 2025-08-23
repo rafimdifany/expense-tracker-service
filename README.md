@@ -22,20 +22,6 @@ This project includes JWT-based authentication, CRUD operations for transactions
 
 ---
 
-## 📁 Project Structure
-src/main/java/com/example/expensetracker/
-├── config/ # Security & JWT configuration
-├── controller/ # REST Controllers
-├── dto/ # Data Transfer Objects
-├── entity/ # JPA Entities
-├── repository/ # Spring Data JPA Repositories
-├── service/ # Business Logic Services
-├── exception/ # Global Exception Handling
-└── ExpenseTrackerApplication.java
-
-
----
-
 ## ✅ Features
 
 - 🔐 User Registration & Login (JWT-based)
