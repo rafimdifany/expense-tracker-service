@@ -5,6 +5,7 @@ import com.expense_tracker.expense_tracker_service.dto.AuthRequest;
 import com.expense_tracker.expense_tracker_service.dto.AuthResponse;
 import com.expense_tracker.expense_tracker_service.dto.RegisterRequest;
 import com.expense_tracker.expense_tracker_service.service.AuthService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/api/auth")
 @RequiredArgsConstructor
+@Tag(name = "Authentication", description = "Authentication APIs")
 public class AuthController {
 
     private final AuthService authService;
