@@ -2,16 +2,13 @@ package com.expense_tracker.expense_tracker_service.service;
 
 
 import com.expense_tracker.expense_tracker_service.dto.User.UserResponseDto;
-import com.expense_tracker.expense_tracker_service.entity.User;
 import com.expense_tracker.expense_tracker_service.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
-import java.util.stream.Collectors;
 
 @Service
 @Slf4j

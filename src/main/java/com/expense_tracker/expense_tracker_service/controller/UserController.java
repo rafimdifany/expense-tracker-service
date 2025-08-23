@@ -2,7 +2,6 @@ package com.expense_tracker.expense_tracker_service.controller;
 
 
 import com.expense_tracker.expense_tracker_service.dto.User.UserResponseDto;
-import com.expense_tracker.expense_tracker_service.entity.User;
 import com.expense_tracker.expense_tracker_service.service.UserService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
