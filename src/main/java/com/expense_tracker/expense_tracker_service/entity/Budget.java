@@ -1,39 +1,36 @@
 package com.expense_tracker.expense_tracker_service.entity;
 
+
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
-
-/**
- * TODO : make category to be dynamic (user can create custom category)
- * */
 @Entity
-@Table(name ="category_template")
+@Table(name = "budget")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Category {
+public class Budget {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String name;
+    private BigDecimal amount;
 
-    @ManyToOne
-    @JoinColumn(name = "user_id", nullable = false)
-    private User user;
+    @OneToOne
+    @JoinColumn(name = "category_id")
+    private Category category;
 
     @CreationTimestamp
     private LocalDateTime createdAt;
 
     @UpdateTimestamp
     private LocalDateTime updatedAt;
-
 }

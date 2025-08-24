@@ -18,9 +18,8 @@ public class CategoryService {
 
     public List<CategoryResponseDto> getAll() {
         return categoryRepository.findAll().stream().map(data -> CategoryResponseDto.builder()
-                .code(data.getCode())
+                .user(data.getUser())
                 .name(data.getName())
-                .type(data.getType())
                 .build()).toList();
     }
 
@@ -28,9 +27,8 @@ public class CategoryService {
         Category category = categoryRepository.findById(id).orElseThrow();
 
         return CategoryResponseDto.builder()
-                .type(category.getType())
                 .name(category.getName())
-                .code(category.getCode())
+                .user(category.getUser())
                 .build();
     }
 }
