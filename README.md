@@ -19,7 +19,7 @@ This project includes JWT-based authentication, CRUD operations for transactions
 - **Lombok**
 - **JUnit 5** & **Mockito** (for testing)
 - **Maven** as the build tool
-- **Springdoc OpenAPI (Swagger)** for API documentation
+- **Springdoc OpenAPI (Swagger)** for API documentations
 
 ---
 
