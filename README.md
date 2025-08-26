@@ -58,3 +58,18 @@ Swagger UI lets you explore and test all available endpoints directly from your 
 - PostgreSQL (or any other RDBMS)
 
 
+## Run with Docker
+
+1. Clone repo:
+   ```bash
+   git clone https://github.com/username/expense-tracker-service.git
+   cd expense-tracker-service
+
+2. Build & Run manual:
+   ```bash
+   docker build -t expense-tracker .
+   docker run -p 8080:8080 expense-tracker
+
+3. Or Use Docker Compose (recommended if you need databases)
+   ```bash
+   docker compose up --build

@@ -9,6 +9,7 @@ import com.expense_tracker.expense_tracker_service.dto.RegisterRequest;
 import com.expense_tracker.expense_tracker_service.entity.User;
 import com.expense_tracker.expense_tracker_service.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.authentication.*;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -18,6 +19,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
+@Slf4j
 public class AuthService {
 
     private final UserRepository userRepository;
