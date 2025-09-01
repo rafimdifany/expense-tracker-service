@@ -2,14 +2,14 @@
 
 # 💸 Expense Tracker App - Backend [WIP]
 
-A RESTful backend service for tracking personal expenses and income, built with **Spring Boot 3** and **Java 21**.  
+A RESTful backend service for tracking personal expenses and income, built with **Spring Boot 3** and **Java 17**.  
 This project includes JWT-based authentication, CRUD operations for transactions and categories, and a clean modular structure for maintainability and scalability.
 
 ---
 
 ## 📦 Tech Stack
 
-- **Java 21**
+- **Java 17**
 - **Spring Boot 3**
   - Spring Security (JWT Authentication)
   - Spring Data JPA
