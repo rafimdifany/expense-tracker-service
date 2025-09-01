@@ -53,9 +53,9 @@ Swagger UI lets you explore and test all available endpoints directly from your 
 
 ### Prerequisites
 
-- Java 21
+- Java 17
 - Maven
-- PostgreSQL (or any other RDBMS)
+- PostgreSQL (or any other RDBMS) //TODO
 
 
 ## Run with Docker
