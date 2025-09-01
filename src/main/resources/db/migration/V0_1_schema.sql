@@ -5,4 +5,4 @@ CREATE TABLE users (
                        full_name VARCHAR(150)
 );
 
-insert into users (email, password, full_name) values ('rafimdifany@gmail.com', '$2a$10$e/pZ4xeTZz9C3GG5oz9lquIm7TPHGqlIkye22mlz0vmvAFTT3dQoO', 'Rafi Mufadhal Difany')
+insert into users (email, password, full_name) values ('acengSugar@gmail.com', '$2a$10$e/pZ4xeTZz9C3GG5oz9lquIm7TPHGqlIkye22mlz0vmvAFTT3dQoO', 'Aceng Kemoceng')
